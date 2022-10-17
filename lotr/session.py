@@ -1,16 +1,16 @@
 import requests
 
 
-class LordOfTheRingsSession(requests.Session):
+class TheOneAPISession(requests.Session):
     """
     Lord Of The Rings Session Object
     :param requests.Session: Sub-classes requests Session
     """
     def __init__(self):
         """
-        Initialize LOTRSession
+        Initialize TheOneAPISession
         """
-        super(LordOfTheRingsSession, self).__init__()
+        super(TheOneAPISession, self).__init__()
 
         self.headers.update({
             'Content-Type': 'application/json'

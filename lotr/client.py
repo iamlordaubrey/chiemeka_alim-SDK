@@ -1,10 +1,10 @@
 from lotr.constants import HOST, BASEPATH
-from lotr.session import LordOfTheRingsSession
+from lotr.session import TheOneAPISession
 
 
-class LordOfTheRingsAPI:
+class TheOneAPIBase:
     """
-    Lord Of The Rings API Wrapper Class
+    TheOneAPI Base Class
     """
     def __init__(self, access_token: str = None, verify: bool = True):
         """
@@ -12,7 +12,7 @@ class LordOfTheRingsAPI:
         :param access_token: token used for initial Bearer Auth
         :param verify: Certificate verification flag. Defaults to True
         """
-        self.session = LordOfTheRingsSession()
+        self.session = TheOneAPISession()
         self.base_url = f'https://{HOST}{BASEPATH}'
 
         self.session.set_bearer_auth(access_token) if access_token else None
