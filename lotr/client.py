@@ -17,6 +17,9 @@ class TheOneAPIBase:
 
         self.session.set_bearer_auth(access_token) if access_token else None
 
+        print('in oneapibase', self.session.headers)
+        print(access_token)
+
         self.session.set_verify(verify)
 
     def _build_url(self, resource: str) -> str:

@@ -7,6 +7,12 @@ clean_venv:
 	source deactivate || true
 	rm -rf $(VENV)
 
+clean_env:
+	rm -f .env
+
+env: clean_env
+	cp -p .env.tpl .env
+
 requirements.txt: requirements.in
 	test -r $(VENV) || make $(VENV)
 	source $(VENV)/bin/activate \
@@ -19,3 +25,8 @@ setup:
 
 pip_sync: requirements.txt
 	source $(VENV)/bin/activate && pip-sync requirements.txt
+
+spec=test
+runtest:
+	source $(VENV)/bin/activate \
+	&& PYTHONDONTWRITEBYTECODE=1 $(VENV)/bin/pytest -vvv '${spec}'
