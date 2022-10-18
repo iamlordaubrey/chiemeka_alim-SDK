@@ -1,4 +1,4 @@
-from lotr.client import TheOneAPIBase
+from src.lotr.client import TheOneAPIBase
 
 
 class LordOfTheRings(TheOneAPIBase):

@@ -1,5 +1,5 @@
-from lotr.constants import HOST, BASEPATH
-from lotr.session import TheOneAPISession
+from src.lotr.constants import HOST, BASEPATH
+from src.lotr.session import TheOneAPISession
 
 
 class TheOneAPIBase:

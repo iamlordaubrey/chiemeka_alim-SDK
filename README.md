@@ -27,8 +27,9 @@ make pip_sync
 Register and login [here](https://the-one-api.dev/sign-up) to get your _access token_. 
 
 Import the class `LordOfTheRings` and call the available methods, passing params where necessary. Example:
+
 ```python
-from lotr.endpoints import LordOfTheRings
+from src.lotr.endpoints import LordOfTheRings
 
 client = LordOfTheRings(access_token='your_access_token')
 
