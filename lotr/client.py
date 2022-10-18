@@ -12,14 +12,10 @@ class TheOneAPIBase:
         :param access_token: token used for initial Bearer Auth
         :param verify: Certificate verification flag. Defaults to True
         """
-        self.session = TheOneAPISession()
         self.base_url = f'https://{HOST}{BASEPATH}'
 
+        self.session = TheOneAPISession()
         self.session.set_bearer_auth(access_token) if access_token else None
-
-        print('in oneapibase', self.session.headers)
-        print(access_token)
-
         self.session.set_verify(verify)
 
     def _build_url(self, resource: str) -> str:
