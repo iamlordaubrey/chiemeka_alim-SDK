@@ -20,6 +20,7 @@ requirements.txt: requirements.in
 
 setup:
 	test -r $(VENV) || make $(VENV)
+	test -r .env || make env
 	test -f requirements.txt || make requirements.txt
 	source $(VENV)/bin/activate && pip install -r requirements.txt
 
