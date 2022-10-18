@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+src/lord_aubrey_of_the_rings.egg-info/PKG-INFO
+src/lord_aubrey_of_the_rings.egg-info/SOURCES.txt
+src/lord_aubrey_of_the_rings.egg-info/dependency_links.txt
+src/lord_aubrey_of_the_rings.egg-info/requires.txt
+src/lord_aubrey_of_the_rings.egg-info/top_level.txt
+src/lotr/__init__.py
+src/lotr/client.py
+src/lotr/constants.py
+src/lotr/endpoints.py
+src/lotr/session.py
+test/test_filtering.py
+test/test_pagination.py
+test/test_sorting.py

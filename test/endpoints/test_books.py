@@ -1,6 +1,6 @@
 from unittest import TestCase
 
-from src.lotr.endpoints import LordOfTheRings
+from lord_of_the_rings.endpoints import LordOfTheRings
 
 
 class BooksTest(TestCase):

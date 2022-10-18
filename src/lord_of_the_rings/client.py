@@ -1,5 +1,5 @@
-from src.lotr.constants import HOST, BASEPATH
-from src.lotr.session import TheOneAPISession
+from lord_of_the_rings.constants import HOST, BASEPATH
+from lord_of_the_rings.session import TheOneAPISession
 
 
 class TheOneAPIBase:

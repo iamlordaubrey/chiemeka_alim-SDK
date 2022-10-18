@@ -3,7 +3,7 @@ import os
 import pytest
 from dotenv import load_dotenv
 
-from src.lotr.endpoints import LordOfTheRings
+from lord_of_the_rings.endpoints import LordOfTheRings
 
 load_dotenv()
 
