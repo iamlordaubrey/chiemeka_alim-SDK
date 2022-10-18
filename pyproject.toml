@@ -4,12 +4,12 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "lord-aubrey-of-the-rings"
-version = "0.0.1"
+version = "0.1.0"
 authors = [
   { name="Chiemeka Alim", email="lord.chiemy@gmail.com" },
 ]
 license = { file = "LICENSE" }
-description = "A small lord of the rings sdk"
+description = "A micro lord of the rings sdk"
 readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
